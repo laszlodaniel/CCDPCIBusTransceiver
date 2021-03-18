@@ -16,7 +16,28 @@ PCI-bus is handled by the MC33390 chip.
 
 An external microcontroller is needed, preferably an Arduino Mega, to handle the translations themselves and to provide the J1850 VPW protocol decoding function.
 
-Pinout description and example Arduino sketch are coming soon.
+Pinout:
+
+| PCB      | Arduino Mega | OBD2 connector                        |
+|----------|--------------|---------------------------------------|
+| J1 GND   | GND          |                                       |
+| J1 +5V   | +5V          |                                       |
+| J1 TBEN  | D4           |                                       |
+| J1 TX    | RXD1         |                                       |
+| J1 RX    | TXD1         |                                       |
+| J1 INT   | D3           |                                       |
+| J1 CCD-  |              | J1962-11                              |
+| J1 CCD+  |              | J1962-3                               |
+| J1 GND   |              | J1962-4                               |
+| J2 +12V  |              | J1962-16                              |
+| J2 TX    | D10          |                                       |
+| J2 RX    | D11          |                                       |
+| J2 SLEEP | D5           |                                       |
+| J2 4XLP  | D6           |                                       |
+| J2 PCI   |              | J1962-2                               |
+| J2 GND   |              | J1962-4 (ignore if already connected) |
+
+Example Arduino sketch is coming soon.
 
 As an extension of the [CCDBusTransceiver](https://github.com/laszlodaniel/CCDBusTransceiver) it can be used as CCD-bus transceiver or PCI-bus transceiver only.
 
