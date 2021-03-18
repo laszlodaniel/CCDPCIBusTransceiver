@@ -5,6 +5,8 @@ To be used with [CCDLibrary](https://github.com/laszlodaniel/CCDLibrary) and [J1
 
 ![ccdpcibustransceiver_v200_topbottom_render.png](https://chryslerccdsci.files.wordpress.com/2021/03/ccdpcibustransceiver_v200_topbottom_render.png)
 
+PCI-bus RX/TX-pin labels on the PCB are accidentally reversed! MC33390 has its pins named backwards.
+
 This is an attempt to make a hybrid transceiver board to handle CCD-bus (SAE J1567) and PCI-bus (SAE J1850 VPW) communication at the same time.
 It is especially useful when a vehicle module gets replaced with an otherwise matching one that uses the other communication bus.
 In rare cases the only thing to do is to insert a 2-way gateway between the original vehicle modules and the foreign module.
