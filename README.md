@@ -1,7 +1,7 @@
 # CCDPCIBusTransceiver
 Development board for interfacing Chrysler's legacy CCD/PCI-bus.
 
-To be used with [CCDLibrary](https://github.com/laszlodaniel/CCDLibrary) and [J1850 VPW Arduino Transceiver Library](https://github.com/matafonoff/J1850-VPW-Arduino-Transceiver-Library).
+To be used with [CCDLibrary](https://github.com/laszlodaniel/CCDLibrary) and [J1850VPWCore](https://github.com/laszlodaniel/J1850VPWCore).
 
 ![ccdpcibustransceiver_v200_topbottom_render.png](https://chryslerccdsci.files.wordpress.com/2021/03/ccdpcibustransceiver_v200_topbottom_render.png)
 
@@ -39,6 +39,4 @@ Pinout:
 
 Example Arduino sketch is coming soon.
 
-As an extension of the [CCDBusTransceiver](https://github.com/laszlodaniel/CCDBusTransceiver) it can be used as CCD-bus transceiver or PCI-bus transceiver only.
-
-Available for sale in April 2021.
+As an extension and successor of the [CCDBusTransceiver](https://github.com/laszlodaniel/CCDBusTransceiver) it can be used as CCD-bus transceiver or PCI-bus transceiver only.
