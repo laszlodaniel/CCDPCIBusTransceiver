@@ -304,6 +304,23 @@ void translate_pci_to_ccd()
         delay(50);
         CCD.write(custom_ccd_message_09, sizeof(custom_ccd_message_09));
     }
+
+    if (CCD.available()) // if there's a new unread message in the buffer
+    {
+        last_ccd_msg_length = CCD.read(ccd_rx_buf); // read message in the lastMessage array and save its length in the lastMessageLength variable
+
+        if (last_ccd_msg_length > 0) // valid message length is always greater than 0
+        {
+            for (uint8_t i = 0; i < last_ccd_msg_length; i++)
+            {
+                if (ccd_rx_buf[i] < 16) Serial.print("0"); // print leading zero
+                Serial.print(ccd_rx_buf[i], HEX); // print message byte in hexadecimal format on the serial monitor
+                Serial.print(" "); // insert whitespace between bytes
+            }
+
+            Serial.println(); // add new line
+        }
+    }
 }
 
 void translate_ccd_to_pci()
