@@ -22,7 +22,7 @@ Pinout:
 |----------|--------------|---------------------------------------|
 | J1 GND   | GND          |                                       |
 | J1 +5V   | +5V          |                                       |
-| J1 TBEN  | D4           |                                       |
+| J1 TBEN  | D4 or D13 *  |                                       |
 | J1 TX    | RXD1         |                                       |
 | J1 RX    | TXD1         |                                       |
 | J1 INT   | D3           |                                       |
@@ -36,6 +36,8 @@ Pinout:
 | J2 4XLP  | D6           |                                       |
 | J2 PCI   |              | J1962-2                               |
 | J2 GND   |              | J1962-4 (ignore if already connected) |
+
+* The TBEN pin definition must be changed from 4 to 13 in order for the CCD/SCI GUI to work properly.
 
 Example Arduino sketch is coming soon.
 
