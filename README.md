@@ -3,7 +3,7 @@ Development board for interfacing Chrysler's legacy CCD/PCI-bus.
 
 To be used with [CCDLibrary](https://github.com/laszlodaniel/CCDLibrary) and [J1850VPWCore](https://github.com/laszlodaniel/J1850VPWCore).
 
-![ccdpcibustransceiver_v200_topbottom_render.png](https://chryslerccdsci.files.wordpress.com/2021/03/ccdpcibustransceiver_v200_topbottom_render.png)
+![PCB](https://chryslerccdsci.files.wordpress.com/2021/04/img_20210416_120804_02.jpg)
 
 PCI-bus RX/TX-pin labels on the PCB are accidentally reversed! MC33390 has its pins named backwards.
 
@@ -38,7 +38,5 @@ Pinout:
 | J2 GND   |              | J1962-4 (ignore if already connected) |
 
 * The TBEN pin definition must be changed from 4 to 13 in order for the CCD/SCI GUI to work properly.
-
-Example Arduino sketch is coming soon.
 
 As an extension and successor of the [CCDBusTransceiver](https://github.com/laszlodaniel/CCDBusTransceiver) it can be used as CCD-bus transceiver or PCI-bus transceiver only.
