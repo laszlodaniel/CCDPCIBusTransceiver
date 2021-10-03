@@ -3,6 +3,8 @@ Development board for interfacing Chrysler's legacy CCD/PCI-bus.
 
 To be used with [CCDLibrary](https://github.com/laszlodaniel/CCDLibrary) and [J1850VPWCore](https://github.com/laszlodaniel/J1850VPWCore).
 
+[Get one or two on Tindie!](https://www.tindie.com/products/20980/)
+
 ![PCB](https://chryslerccdsci.files.wordpress.com/2021/04/img_20210416_120804_02.jpg)
 
 PCI-bus RX/TX-pin labels on the PCB are accidentally reversed! MC33390 has its pins named backwards.
