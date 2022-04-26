@@ -32,10 +32,10 @@ Pinout:
 | J1 CCD+  |              | J1962-3                               |
 | J1 GND   |              | J1962-4                               |
 | J2 +12V  |              | J1962-16                              |
-| J2 TX    | D10          |                                       |
-| J2 RX    | D11          |                                       |
+| J2 TX    | D9           |                                       |
+| J2 RX    | D2           |                                       |
 | J2 SLEEP | D5           |                                       |
-| J2 4XLP  | D6           |                                       |
+| J2 4XLP  | D7           |                                       |
 | J2 PCI   |              | J1962-2                               |
 | J2 GND   |              | J1962-4 (ignore if already connected) |
 
