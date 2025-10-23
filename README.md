@@ -41,4 +41,22 @@ Pinout:
 
 * The TBEN pin definition must be changed from 4 to 13 in order for the CCD/SCI GUI to work properly.
 
+Pinout (V3.0.0)
+
+| PCB      | Arduino Mega | OBD2 connector                        |
+|----------|--------------|---------------------------------------|
+|  2 VCC   | +5V          |                                       |
+|  3 GND   | GND          |                                       |
+|  4 PTX   | D9           |                                       |
+|  5 PRX   | D2           |                                       |
+|  6 CIDL  | D3           |                                       |
+|  7 CTX   | RXD1         |                                       |
+|  8 CRX   | TXD1         |                                       |
+|  9 TBEN  | D4           |                                       |
+| 11 CCD-  |              | J1962-11                              |
+| 12 CCD+  |              | J1962-3                               |
+| 13 PCI   |              | J1962-2                               |
+| 14 GND   |              | J1962-4                               |
+| 15 +12V  |              | J1962-16                              |
+
 As an extension and successor of the [CCDBusTransceiver](https://github.com/laszlodaniel/CCDBusTransceiver) it can be used as CCD-bus transceiver or PCI-bus transceiver only.
